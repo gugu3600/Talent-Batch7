@@ -18,17 +18,7 @@ togglers.forEach(function(toggler){
 
         let dd = this.parentNode.nextElementSibling;
 
-       if(dd.classList.contains("active")){
-
-        dd.classList.remove("active");
-
-       }
-
-       else{
-
-        dd.classList.add("active");
-
-       }
+       dd.classList.contains("active") ? dd.classList.remove("active") : dd.classList.add("active");
 
     });
 
