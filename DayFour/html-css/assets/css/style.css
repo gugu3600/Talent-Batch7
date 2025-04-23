@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --dark : #212121;
+    --light: #fff;
+    --muted: #ddd;
+    --red: red;
+    --orange: #ff9933;
+    --box-shadow-x:0px 4px 8px var(--muted);
+    --box-shadow:5px 4px 8px var(--muted);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto";
+    
+}
+
+header{
+    width: 100%;
+    background-color: var(--light);
+    box-shadow: var(--box-shadow-x);
+    position: fixed;
+}
+
+header nav{
+    padding: 8px 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 a{
+    color: var(--orange);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 4px;
+}
+
+nav ul{
+    list-style:none;
+    display: flex;   
+}
+
+nav ul li a{
+    color: var(--dark);
+    padding: 0px 25px;
+}
+.container-fluid{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-fluid aside{
+    width: 15%;
+    height: calc(100vh - 45.6px);
+    background-color: var(--dark);
+    position: fixed;
+    margin-top: 50px;
+    overflow-y: auto;
+    z-index: -1;
+}
+
+.container-fluid aside ul{
+    padding: 20px;
+    list-style: none;
+}
+
+.container-fluid aside ul li{
+    padding: 8px;
+}
+
+.container-fluid aside ul li a{
+    color: var(--light);
+    text-decoration: none;
+}
+
+.reg-section{
+    width: calc(100% - 15%);
+    min-height: calc(100vh - 45.6px);
+    padding: 20px;
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+.reg-section form{
+    margin-top: 20px;
+    padding: 20px;
+    box-shadow: 10px 20px 8px var(--muted),-5px -8px 8px var(--muted);
+}
+.form-group{
+    padding: 5px;
+}
+
+.form-group>label{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.form-group .form-control,.form-group .form-select{
+    width: 100%;
+    border: 1px solid var(--muted);
+    padding: 8px 5px;
+}
+
+textarea{
+    width: 100%;
+    height: 80px;
+}
+
+.btn{
+    width: 90px;
+    height: 25px;
+    background-color: red;
+    color: var(--light);
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 3px 6px 3px var(--muted),0px -6px 3px var(--muted);
+    cursor: pointer;
+}
+
+input[type=button]{
+    background-color: var(--muted);
+    color: var(--dark);
+    margin-left: 10px;
+}
+
+.footer{
+    width: 100%;
+    /* height: 20px; */
+    background-color: gray;
+    padding: 4px 20px ;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 228.3px;
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+}
+
+.footer ul li{
+    color: blue;
+    padding: 5px 10px;
+}
